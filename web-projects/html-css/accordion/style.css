@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgb(223, 239, 253),rgb(143, 174, 202),rgb(66, 102, 134));
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#accordion{
+    margin: 100px auto;
+    width: 600px;
+}
+
+#accordion li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 16px;
+}
+
+label{
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(56, 49, 49);
+    text-shadow: 0.6px 0.6px  pink;
+    transition: border 0.1s;
+    border-radius: 16px;
+}
+
+label:hover{
+    border: 3px solid black;
+}
+
+span{
+    transform: rotate(90deg);
+    color: rgb(7, 7, 107);
+}
+
+input{
+    display: none;
+}
+
+.content{
+    overflow: hidden;
+    padding: 0px 10px;
+    line-height: 30px;
+    max-height: 0;
+    transition: 0.12s;
+}
+
+input:checked + .content{
+    max-height: 400px;
+}
+

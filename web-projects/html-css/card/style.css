@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(185, 193, 193);
+}
+
+.card-container{
+    position: relative;
+    padding: 40px;
+    width: 320px;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+.card-container::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: calc(-100% + 5px);
+    height: 100%;
+    width: 100%;
+    background-color: darkgoldenrod;
+    z-index: 1;
+    transition: 1s;
+}
+
+.card-container:hover::before{
+    bottom: 0;
+}
+
+.content{
+    position: relative;
+    color: black;
+    z-index: 2;
+    transition: 1s;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    padding: 20px 0;
+    margin: 20px 0;
+    text-align: center;
+    font-style: italic;
+}
+
+a{
+    color: whitesmoke;
+    background-color: darkgrey;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 1s;
+}
+
+.card-container:hover .content{
+    color: rgb(247, 229, 208);
+}
+
+.card-container:hover a{
+    background-color: black;
+}

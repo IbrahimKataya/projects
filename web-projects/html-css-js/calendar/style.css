@@ -1,0 +1,63 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.772);
+}
+
+.calendar{
+
+    background-color: white;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 4px 3px 2px black;
+}
+
+.month{
+    margin: 0;
+    position: relative;
+    background-color: rgb(246, 163, 100);
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0px 2px 3px black;
+}
+
+.day{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(213, 213, 213);
+    border-radius: 3px;
+    padding: 4px;
+    font-style: italic;
+    
+}
+
+.day-number{
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.year{
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    background-color: coral;
+    box-shadow: 0px 2px 3px black;
+    position: relative;
+    z-index: 1;
+}

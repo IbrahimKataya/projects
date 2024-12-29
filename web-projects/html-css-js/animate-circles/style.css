@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+
+}
+
+.box{
+    position: relative;
+    margin: 50px;
+
+}
+
+.box .text{
+
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+
+}
+
+.box .text h2{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.box .text p{
+    font-size: 20px;
+    display: block;
+
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.circle .points{
+    background: white;
+    height: 15px;
+    width: 3px;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i) * var(--rot))) translateY(-100px);
+
+    padding: 1px;
+}
+
+.points.marked{
+    animation: marked 0.03s linear forwards;
+    animation-delay: calc(var(--i) * 0.05s);
+}
+
+@keyframes marked{
+    0%{
+        background: white;
+        box-shadow: none;
+    }
+
+    100%{
+        background: var(--bgColor);
+        box-shadow: 0 0 10px var(--bgColor);
+    }
+
+}
+
+/* 
+:root{
+    --bgColor
+} */

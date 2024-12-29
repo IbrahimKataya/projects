@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gray;
+    color: ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.container{
+    padding: 5px 0px;
+    text-align: center;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 1rem 5rem;
+    margin-bottom: 15px;
+    outline: none;
+    box-shadow: 3px 3px 3px black;
+}
+
+#selectOp{
+    margin-bottom: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+#btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}

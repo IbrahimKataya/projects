@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+    background-color: rgba(128, 55, 55, 0.89);
+}
+
+.container{
+    width: 20rem;
+    background-color: rgb(203, 148, 148);
+    border-radius: 10px;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px black;
+    
+}
+
+#captcha{
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+input{
+    padding: 12px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 13px 0px;
+
+    outline: none;
+}
+
+button{
+    background-color: lemonchiffon;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    width : 50%;
+    margin: 5px;
+
+}
+
+canvas{
+    pointer-events: none;
+    
+
+}

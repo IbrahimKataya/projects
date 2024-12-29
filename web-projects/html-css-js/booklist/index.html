@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form class="book-form">
+            <div>
+                <label for="title">Book Title</label>
+                <input type="text" id="title">
+            </div>
+            <div>
+                <label for="author">Book Author</label>
+                <input type="text" id="author">
+            </div>
+            <div>
+                <label for="year">Publish Year</label>
+                <input type="text" id="year">
+            </div>
+            <button type="submit" class="btn">Add Book</button>
+        </form>
+
+        <div class="table">
+            <div class="table-div">
+                <div>Title</div>
+                <div>Author</div>
+                <div>Year</div>
+            </div>
+
+            <div id="book-list"></div>
+        </div>
+
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

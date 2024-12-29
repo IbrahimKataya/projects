@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Gradient Color Generator</h2>
+        <div id="gradient-box"></div>
+        <div class="copycode">
+            <input type="text" id="color-code" value="linear-gradient(45deg,red,blue)" readonly>
+            <button title="click to copy" id="copy-btn"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div>
+            <input type="color" name="color1" id="color1" value="black">
+            <input type="color" name="color1" id="color2" value="#ffffff">
+        </div>
+        
+        <div class="angle-container">
+        <input type="number" min="0" max="360" name="angle" id="angle" value="45">
+        <label for="angle">angle</label>
+        </div>
+
+        <input type="range" id="angle-range" value="12.5" min="0" max="100">
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

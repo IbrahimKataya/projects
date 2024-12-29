@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: beige;
+}
+
+#emoji{
+    font-size: 15rem;
+    transition-duration: 200ms;
+    filter: grayscale(1);
+    cursor: pointer;
+}
+
+#emoji:hover{
+    filter: grayscale(0);
+}
+
+.unselectable {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Standard syntax */
+  }

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    line-height: 3rem;
+
+}
+
+.container{
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.watch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 8rem;
+    border-radius: 10px;
+    min-width: 610px;
+}
+
+h2{
+    font-size: 70px;
+    height: 48px;
+    width: 482.62px;
+
+}
+
+h2.paused{
+    color: brown;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+button{
+    margin-top: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}

@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(115deg,#737309,#808043)
+}
+
+img{
+    border-radius: 10px;
+}
+
+.profile-card{
+    background-color: darkblue;
+    height: 100%;
+    width: 550px;
+    color: whitesmoke;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 2px 2px black;
+    position: relative;
+
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.user-log button{
+    background-color: blue;
+    padding: 6px;
+    border-radius: 10px;
+    left: 0;
+    box-shadow: 1px 2px 2px black;
+    transition: 0.05s ;
+    position: relative;
+    border: none;
+}
+
+.user-log button:active{
+    box-shadow: none;
+    transform: translate(1px,2px);
+}
+
+
+.user-log{
+    margin-bottom: 20px;
+    width: 100%;
+    flex-direction: column;
+    left: 0;
+}
+
+.user-log h2{
+    text-align: center;
+    margin: 5px;
+}
+
+.user-log ul{
+    list-style: square;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+li{
+    padding: 3px 0px;
+}
+
+.contact-me{
+
+    width: 100%;
+
+}
+
+.contact-list{
+    list-style: none;
+}
+
+.social-media{
+    margin-top: 20px;
+}
+
+.social-media ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media li{
+    padding: 10px 30px 0px 30px;
+    list-style: none;
+}
+
+
+
+.social-media i{
+    font-size: 30px;
+    padding-left: 33px;
+}
+
+#whatsapp-logo{
+    color: #25D366;
+}
